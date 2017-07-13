@@ -1,7 +1,6 @@
 /*
  * Common utility functions.
  */
-
 export default class Commons {
 
 	static reqpar(name) {
@@ -15,13 +14,13 @@ export default class Commons {
 	}
 
 	static api() {
-		//return '/api/admin/do';	// DEV
-		return '/admin/do';	// PROD
+		return '/api/admin/do';	// DEV
+		//return '/admin/do';	// PROD
 	}
 
 	static host() {
-		//return 'http://localhost:8080';		// DEV
-		return 'https://www.e-act.nl';	// PROD
+		return 'http://localhost:8080';		// DEV
+		//return 'https://www.prodsite.com';	// PROD
 	}
 
 }
