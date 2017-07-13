@@ -1,0 +1,257 @@
+
+.fluid-small-margins {
+	padding-left:20px;
+	padding-right:20px;
+}
+
+#check-this {
+    color: blue;
+    font-size: 15px;
+}
+
+/* ======================== vuetable-2 styles ==================== */
+
+.vuetable ul.dropdown-menu li {
+	margin-left: 20px;
+}
+
+.vuetable th.sortable:hover {
+	color: #2185d0;
+	cursor: pointer;
+}
+
+.vuetable-actions {
+	width: 11%;
+	padding: 12px 0px;
+	text-align: center;
+}
+
+.vuetable-actions>button {
+	padding: 3px 6px;
+	margin-right: 4px;
+}
+
+.vuetable-pagination {
+	margin: 0;
+	min-height:40px;
+	padding-left:1em;
+	border-top: 1px solid #e0e0e0;
+	border-left: 1px solid #e0e0e0;
+	border-right: 1px solid #e0e0e0;
+}
+
+.vuetable-pagination-bottom {
+	margin-top: -20px;
+	border-bottom: 1px solid #e0e0e0;
+	border-top: 0px;
+}
+
+.vuetable-pagination .btn {
+	margin: 2px;
+}
+
+.ui.blue.table {
+	border-top:.2em solid #2185D0;
+	border-bottom:.2em solid #2185D0;
+}
+
+tr.vuetable-odd {
+	background-color: #e6f5ff;
+}
+
+.vuetable-pagination-info {
+	float: left;
+	margin-right:2em;
+	margin-top: 1em;
+	padding-top: 1.5em;
+	margin-bottom: auto;
+	color:#666;
+	font-size:0.9em;
+}
+
+.vuetable-pagination-info-top {
+	padding-top:30px;
+}
+
+.vuetable-pagination-info-bottom {
+	padding-top:10px;
+}
+
+.vuetable ul.pagination {
+	margin: 0px;
+}
+
+.vuetable-pagination-component {
+	float: right;
+}
+
+.vuetable-pagination-component li a {
+	cursor: pointer;
+}
+
+[v-cloak] {
+	display: none;
+}
+
+.vuetable .highlight {
+	background-color: yellow;
+}
+
+.vuetable-detail-row {
+	height: 200px;
+}
+
+.vuetable .detail-row {
+	margin-left: 40px;
+}
+
+.vuetable .expand-transition {
+	transition: all .5s ease;
+}
+
+.vuetable .expand-enter, .expand-leave {
+	height: 0;
+	opacity: 0;
+}
+
+.vuetable tbody tr td {
+	font-size: 1em;
+	color: rgba(0,0,0,.87);
+}
+
+.vuetable .custom-action {
+	width: 80px;
+	text-align: center;
+}
+
+.vuetable tbody tr td {
+	font-size: 1em;
+	color: rgba(0,0,0,.87);
+}
+
+.vuetable .custom-action {
+	width: 80px;
+	text-align: center;
+}
+
+/* Loading Animation: */
+
+.vuetable-wrapper {
+	opacity: 1;
+	position: relative;
+	filter: alpha(opacity = 100);
+}
+
+.vuetable-wrapper.loading {
+	opacity: 0.3;
+	transition: opacity .3s ease-in-out;
+	-moz-transition: opacity .3s ease-in-out;
+	-webkit-transition: opacity .3s ease-in-out;
+}
+
+.vuetable-wrapper.loading:after {
+	position: absolute;
+	content: '';
+	top: 40%;
+	left: 50%;
+	margin: -30px 0 0 -30px;
+	border-radius: 100%;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	border: 7px solid #217ebd;
+	height: 70px;
+	width: 70px;
+	background: transparent !important;
+	display: inline-block;
+	-webkit-animation: pulse 1s 0s ease-in-out infinite;
+	animation: pulse 1s 0s ease-in-out infinite;
+}
+
+@keyframes pulse {
+	0% {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+	}
+	50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+         border-width: 12px;
+	}
+	100% {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+	}
+}
+
+/* ======================== modal styles ==================== */
+
+.modal-mask {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  display: table;
+  transition: opacity .3s ease;
+}
+
+.modal-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.modal-container {
+  width: 400px;
+  margin: 0px auto;
+  padding: 5px 10px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
+  transition: all .3s ease;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.modal-header {
+  text-align:left!important;
+}
+
+.modal-header h3 {
+  margin-top: 0;
+  color: #578ebe;
+  font-family: Open Sans,sans-serif;
+  font-weight: 300;
+  text-transform: none;
+}
+
+.modal-body {
+  margin: 5px 0;
+  text-align:left;
+  text-transform: none !important;
+  font-weight: normal;
+  color: #333;
+  font-family: Open Sans,sans-serif;
+  font-size: 14px;
+}
+
+.modal-default-button {
+  float: right;
+  color: #000002;
+  font-weight:normal;
+  text-align:left;
+}
+
+.modal-enter {
+  opacity: 0;
+}
+
+.modal-leave-active {
+  opacity: 0;
+}
+
+.modal-enter .modal-container,
+.modal-leave-active .modal-container {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
